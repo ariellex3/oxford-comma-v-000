@@ -1,3 +1,8 @@
 def oxford_comma(array)
-  oxford_comma.split
+  if array.length == 1
+    array.split
+  elsif array.length == 2
+    array.split(" and ")
+  else false
+  end
 end
